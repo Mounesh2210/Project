@@ -1,0 +1,133 @@
+/* Stepper Logic */
+
+.form-section {
+    flex: 1.2;
+    padding: 50px 80px;
+}
+
+
+.stepper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 40px 0;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #b0b0b0;
+}
+
+.step.completed span { background: #e2e8f0; color: #718096; }
+.step.active { color: #1a2b4b; font-weight: 700; }
+.step.active span { background: #00a884; color: white; } /* Matches green in image */
+.step span {
+    padding: 5px 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+/* Card Styling */
+.form-card.no-border {
+    border: none;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+.address-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.full-width label {
+    display: block;
+    font-size: 14px;
+    color:#4a5568;
+    margin-bottom: px;
+    font-weight: 500;
+}
+
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background-color: #e8ebed;
+    font-size: 14px;
+    outline: none;
+}
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    color: #4a5568;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.req{
+    color: red;
+}
+/* input:required:invalid {
+    border-bottom: 2px solid #ff4d4f;
+} */
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #edf2f7;
+    border-radius: 8px;
+    background-color: #e8ebed;
+    font-size: 14px;
+    color: #2d3748;
+}
+
+
+/* Navigation Button */
+.form-navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.next-link {
+    background: none;
+    border: none;
+    color: #4c84ff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.next-link:hover {
+    text-decoration: underline;
+}
+
+/* button */
+.user_btn {
+    width: 100%; 
+    height: 50px;
+    padding: 10px;
+    color: rgb(58, 96, 230);
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    text-align: right;
+}
